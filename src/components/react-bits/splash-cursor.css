@@ -1,0 +1,20 @@
+.splash-cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 163, 108, 0.35);
+  background: radial-gradient(circle, rgba(246, 224, 168, 0.35) 0%, rgba(198, 163, 108, 0.08) 70%, transparent 100%);
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: screen;
+  transform: translate(-9999px, -9999px);
+}
+
+@media (pointer: coarse), (prefers-reduced-motion: reduce) {
+  .splash-cursor {
+    display: none;
+  }
+}
