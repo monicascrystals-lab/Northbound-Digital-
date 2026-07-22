@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="500" viewBox="0 0 800 500" role="img" aria-label="Portfolio preview one">
+  <rect width="800" height="500" fill="#f2f8fd"/>
+  <rect x="70" y="70" width="660" height="360" rx="28" fill="#ffffff" stroke="#dbe9f5" stroke-width="3"/>
+  <rect x="110" y="120" width="220" height="14" rx="7" fill="#21568C"/>
+  <rect x="110" y="150" width="160" height="10" rx="5" fill="#4797C9"/>
+  <rect x="110" y="220" width="280" height="120" rx="18" fill="#eef6fd"/>
+  <rect x="430" y="220" width="240" height="120" rx="18" fill="#052C58"/>
+  <rect x="110" y="360" width="180" height="12" rx="6" fill="#BC9C63"/>
+</svg>

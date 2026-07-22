@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="600" height="700" viewBox="0 0 600 700" role="img" aria-label="Monica portrait placeholder">
+  <rect width="600" height="700" fill="#eef6fd"/>
+  <circle cx="300" cy="235" r="135" fill="#BC9C63"/>
+  <path d="M150 620C175 478 245 410 300 410C355 410 425 478 450 620" fill="#21568C"/>
+  <circle cx="300" cy="240" r="95" fill="#f2c89b"/>
+  <path d="M220 275C240 215 280 185 320 185C360 185 400 215 420 275" fill="#052C58"/>
+</svg>

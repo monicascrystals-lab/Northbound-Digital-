@@ -1,14 +1,475 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Northbound Digital creates premium, mobile-friendly websites for small businesses that want to feel polished, professional, and easy to trust." />
-    <meta name="theme-color" content="#04050a" />
+    <meta
+      name="description"
+      content="Northbound Digital creates premium, responsive websites for small businesses in Bloemfontein and beyond."
+    />
     <title>Northbound Digital | Premium Website Design</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
-    <script type="module" src="/src/main.jsx"></script>
+    <header class="site-header">
+      <nav class="nav container" aria-label="Main navigation">
+        <a class="brand" href="#home" aria-label="Northbound Digital home">
+          <img class="nav-brand-logo" src="Images/northbound-logo.png" alt="Northbound Digital logo" />
+          <span>Northbound Digital</span>
+        </a>
+
+        <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open navigation menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div class="nav-links" id="nav-links">
+          <a href="#home" class="nav-link active">Home</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#services" class="nav-link">Services</a>
+          <a href="#process" class="nav-link">Process</a>
+          <a href="#portfolio" class="nav-link">Portfolio</a>
+          <a href="#why-choose-me" class="nav-link">Why Choose Me</a>
+          <a href="#reviews" class="nav-link">Reviews</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-content reveal">
+            <p class="eyebrow">Professional web design for ambitious businesses</p>
+            <h1>Premium websites designed to help small businesses stand out</h1>
+            <p class="hero-text">
+              I create polished, modern websites that feel luxurious, build trust quickly and turn visitors into enquiries.
+            </p>
+            <div class="hero-actions">
+              <a class="btn btn-primary" href="#portfolio">View My Work</a>
+              <a class="btn btn-secondary" href="#contact">Request a Website</a>
+            </div>
+            <ul class="hero-highlights" aria-label="Key benefits">
+              <li>Mobile-friendly</li>
+              <li>Conversion-focused</li>
+              <li>Fast and reliable</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual reveal" aria-hidden="true">
+            <div class="hero-card">
+              <img class="hero-brand-logo" src="Images/northbound-logo.png" alt="Northbound Digital logo" />
+              <div>
+                <h2>Northbound Digital</h2>
+                <p>Websites built to move your business forward</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about" id="about">
+        <div class="container about-grid">
+          <div class="reveal">
+            <p class="eyebrow">About me</p>
+            <h2>Professional websites that feel clean, elevated and easy to trust</h2>
+            <p>
+              I’m Monica, the founder of Northbound Digital. I create professional, mobile-friendly websites for small businesses that need a stronger online presence and a clearer path to enquiries.
+            </p>
+            <p>
+              My approach blends clean design, thoughtful structure, responsive layouts and clear calls to action so your website looks premium and performs well.
+            </p>
+            <p class="personal-statement">
+              “Every website I build is crafted to reflect your brand with confidence and guide visitors toward the next step.”
+            </p>
+          </div>
+
+          <div class="about-card reveal">
+            <img src="Images/profile-photo.svg" alt="Portrait of Monica from Northbound Digital" />
+            <div class="about-card-content">
+              <h3>Monica</h3>
+              <p>Website designer and digital partner for small businesses.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section services" id="services">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Services</p>
+            <h2>Website services designed to fit the stage your business is at</h2>
+            <p>From a simple launch page to a polished multi-page experience, I offer practical services with premium presentation.</p>
+          </div>
+
+          <div class="service-grid">
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>One-page business websites</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>A focused single-page website that presents your business, services, contact details and call-to-action clearly.</p>
+              <div class="service-details">
+                <p>“A focused single-page website that presents your business, services, contact details and call-to-action clearly.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Multi-page websites</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>A larger website with separate pages for services, about, gallery, contact and other important information.</p>
+              <div class="service-details">
+                <p>“A larger website with separate pages for services, about, gallery, contact and other important information.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Website redesigns</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>An upgrade of an existing website to improve the design, mobile layout, navigation and overall customer experience.</p>
+              <div class="service-details">
+                <p>“An upgrade of an existing website to improve the design, mobile layout, navigation and overall customer experience.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Mobile-friendly design</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>A responsive layout that works smoothly on phones, tablets and desktop screens.</p>
+              <div class="service-details">
+                <p>“A responsive layout that works smoothly on phones, tablets and desktop screens.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Basic SEO setup</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>Page titles, descriptions, headings and structure are prepared to help search engines understand the website.</p>
+              <div class="service-details">
+                <p>“Page titles, descriptions, headings and structure are prepared to help search engines understand the website.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Domain and hosting setup</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>Assistance connecting the website to the client’s domain and publishing it through a suitable hosting provider.</p>
+              <div class="service-details">
+                <p>“Assistance connecting the website to the client’s domain and publishing it through a suitable hosting provider.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Website maintenance</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>Ongoing support for small content changes, image updates, backups and general website upkeep.</p>
+              <div class="service-details">
+                <p>“Ongoing support for small content changes, image updates, backups and general website upkeep.”</p>
+              </div>
+            </article>
+
+            <article class="service-card reveal">
+              <div class="service-card-header">
+                <h3>Content and image updates</h3>
+                <button class="toggle-btn" type="button" aria-expanded="false">Learn More</button>
+              </div>
+              <p>Help replacing text, updating services, changing contact details and adding new images.</p>
+              <div class="service-details">
+                <p>“Help replacing text, updating services, changing contact details and adding new images.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section process" id="process">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Process</p>
+            <h2>A calm, clear process from first conversation to launch day</h2>
+          </div>
+
+          <div class="process-grid">
+            <article class="process-card reveal">
+              <div class="step-number">01</div>
+              <h3>Consultation</h3>
+              <p>We discuss your business, goals, audience, preferred style and the features your website needs.</p>
+              <button class="toggle-btn" type="button" aria-expanded="false">View details</button>
+              <div class="service-details">
+                <p>“We discuss your business, goals, audience, preferred style and the features your website needs.”</p>
+              </div>
+            </article>
+
+            <article class="process-card reveal">
+              <div class="step-number">02</div>
+              <h3>Design</h3>
+              <p>I create the layout, colours, typography and visual direction for the website.</p>
+              <button class="toggle-btn" type="button" aria-expanded="false">View details</button>
+              <div class="service-details">
+                <p>“I create the layout, colours, typography and visual direction for the website.”</p>
+              </div>
+            </article>
+
+            <article class="process-card reveal">
+              <div class="step-number">03</div>
+              <h3>Development</h3>
+              <p>I build the website, add the content, images, responsive layout and interactive features.</p>
+              <button class="toggle-btn" type="button" aria-expanded="false">View details</button>
+              <div class="service-details">
+                <p>“I build the website, add the content, images, responsive layout and interactive features.”</p>
+              </div>
+            </article>
+
+            <article class="process-card reveal">
+              <div class="step-number">04</div>
+              <h3>Review</h3>
+              <p>You review the website and provide feedback before final changes are completed.</p>
+              <button class="toggle-btn" type="button" aria-expanded="false">View details</button>
+              <div class="service-details">
+                <p>“You review the website and provide feedback before final changes are completed.”</p>
+              </div>
+            </article>
+
+            <article class="process-card reveal">
+              <div class="step-number">05</div>
+              <h3>Launch</h3>
+              <p>Once approved, the website is tested, connected to hosting and published online.</p>
+              <button class="toggle-btn" type="button" aria-expanded="false">View details</button>
+              <div class="service-details">
+                <p>“Once approved, the website is tested, connected to hosting and published online.”</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section portfolio" id="portfolio">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Portfolio</p>
+            <h2>Selected projects that reflect a premium, modern approach</h2>
+          </div>
+
+          <div class="portfolio-grid">
+            <article class="portfolio-card reveal">
+              <img src="Images/portfolio-1.svg" alt="Placeholder website preview for Clearwater Plumbing Services" />
+              <div class="portfolio-card-content">
+                <h3>Clearwater Plumbing Services</h3>
+                <p class="portfolio-category">Plumbing</p>
+                <p>Professional local service site with clear contact details and a strong call to action.</p>
+                <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">View This Website</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card reveal">
+              <img src="Images/portfolio-2.svg" alt="Placeholder website preview for Heart & Herb" />
+              <div class="portfolio-card-content">
+                <h3>Heart & Herb</h3>
+                <p class="portfolio-category">Wellness</p>
+                <p>Elegant brand-led layout designed to feel calm, premium and memorable.</p>
+                <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">View This Website</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card reveal">
+              <img src="Images/portfolio-3.svg" alt="Placeholder website preview for Unbound Coffee Shop" />
+              <div class="portfolio-card-content">
+                <h3>Unbound Coffee Shop</h3>
+                <p class="portfolio-category">Hospitality</p>
+                <p>Warm, inviting design paired with a simple online experience for daily visitors.</p>
+                <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">View This Website</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card reveal">
+              <img src="Images/portfolio-4.svg" alt="Placeholder website preview for Headlines Barber" />
+              <div class="portfolio-card-content">
+                <h3>Headlines Barber</h3>
+                <p class="portfolio-category">Barber</p>
+                <p>Fresh, stylish layout with a practical booking-first structure for quick enquiries.</p>
+                <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">View This Website</a>
+              </div>
+            </article>
+
+            <article class="portfolio-card reveal">
+              <img src="Images/portfolio-5.svg" alt="Placeholder website preview for Pure Hair and Beauty" />
+              <div class="portfolio-card-content">
+                <h3>Pure Hair and Beauty</h3>
+                <p class="portfolio-category">Beauty</p>
+                <p>Refined visual identity with smooth navigation and a polished presentation of services.</p>
+                <a class="btn btn-primary" href="https://example.com" target="_blank" rel="noopener noreferrer">View This Website</a>
+              </div>
+            </article>
+          </div>
+          <p class="portfolio-note reveal">Replace these placeholders with your real project screenshots, names, categories, descriptions and website URLs.</p>
+        </div>
+      </section>
+
+      <section class="section why-choose-me" id="why-choose-me">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Why Choose Me</p>
+            <h2>Premium design, personal attention and dependable support</h2>
+          </div>
+          <div class="feature-grid">
+            <div class="feature-card reveal">Professional premium design</div>
+            <div class="feature-card reveal">Mobile-friendly websites</div>
+            <div class="feature-card reveal">Personal service</div>
+            <div class="feature-card reveal">Clear communication</div>
+            <div class="feature-card reveal">Affordable pricing</div>
+            <div class="feature-card reveal">Fast turnaround</div>
+            <div class="feature-card reveal">Easy updates</div>
+            <div class="feature-card reveal">Ongoing support</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section reviews" id="reviews">
+        <div class="container">
+          <div class="section-heading reveal">
+            <p class="eyebrow">Reviews</p>
+            <h2>Testimonials to replace with your real client feedback</h2>
+          </div>
+
+          <div class="review-slider reveal">
+            <button class="slider-btn" id="prevReview" aria-label="Show previous testimonial">←</button>
+            <div class="review-track">
+              <article class="review-slide active">
+                <p class="stars">★★★★★</p>
+                <p>“The website feels premium and polished. It gave my business a much stronger online presence.”</p>
+                <h3>Sarah M.</h3>
+                <span>Local business owner</span>
+              </article>
+              <article class="review-slide">
+                <p class="stars">★★★★★</p>
+                <p>“Communication was easy and the final result looked far more professional than I expected.”</p>
+                <h3>Daniel K.</h3>
+                <span>Service provider</span>
+              </article>
+              <article class="review-slide">
+                <p class="stars">★★★★★</p>
+                <p>“My website now feels elevated, clear and modern. I’m getting more enquiries already.”</p>
+                <h3>Leanne P.</h3>
+                <span>Beauty business</span>
+              </article>
+            </div>
+            <button class="slider-btn" id="nextReview" aria-label="Show next testimonial">→</button>
+          </div>
+          <div class="slider-dots" aria-label="Review slider navigation">
+            <button class="dot active" data-slide="0" aria-label="Show review 1"></button>
+            <button class="dot" data-slide="1" aria-label="Show review 2"></button>
+            <button class="dot" data-slide="2" aria-label="Show review 3"></button>
+          </div>
+        </div>
+      </section>
+
+      <section class="section contact" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-info reveal">
+            <p class="eyebrow">Contact</p>
+            <h2>Let’s build a website that reflects your business beautifully</h2>
+            <p>Whether you need a simple landing page or a full website upgrade, I’m ready to help.</p>
+            <ul class="contact-list">
+              <li><strong>Phone:</strong> <a href="tel:+27766115666">076 611 5666</a></li>
+              <li><strong>WhatsApp:</strong> <a href="https://wa.me/27766115666">076 611 5666</a></li>
+              <li><strong>Email:</strong> <a href="mailto:Northbounddigital@gmail.co.za">Northbounddigital@gmail.co.za</a></li>
+              <li><strong>Location:</strong> Bloemfontein</li>
+              <li><strong>Hours:</strong> Monday–Friday, 09:00–17:00</li>
+            </ul>
+            <div class="contact-actions">
+              <a class="btn btn-primary" href="tel:+27766115666">Call Me</a>
+              <a class="btn btn-secondary" href="https://wa.me/27766115666">WhatsApp Me</a>
+              <a class="btn btn-secondary" href="mailto:Northbounddigital@gmail.co.za">Email Me</a>
+            </div>
+          </div>
+
+          <form class="contact-form reveal" id="contactForm" novalidate>
+            <label for="name">Name</label>
+            <input id="name" name="name" type="text" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" />
+
+            <label for="business">Business name</label>
+            <input id="business" name="business" type="text" />
+
+            <label for="websiteType">Type of website needed</label>
+            <input id="websiteType" name="websiteType" type="text" />
+
+            <label for="budget">Budget</label>
+            <input id="budget" name="budget" type="text" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+
+            <button class="btn btn-primary" type="submit">Send Enquiry</button>
+            <p class="form-message" id="formMessage" role="status" aria-live="polite"></p>
+            <p class="form-note">This demo validates locally in the browser. Connect Formspree or Netlify later to send real submissions.</p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-grid">
+        <div>
+          <h2>Northbound Digital</h2>
+          <p>Websites built to move your business forward</p>
+          <p><a href="tel:+27766115666">076 611 5666</a></p>
+          <p><a href="mailto:Northbounddigital@gmail.co.za">Northbounddigital@gmail.co.za</a></p>
+        </div>
+        <div>
+          <h3>Quick links</h3>
+          <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Social</h3>
+          <ul>
+            <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+            <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+            <li><a href="https://www.linkedin.com/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <p>© <span id="year"></span> Northbound Digital. All rights reserved.</p>
+        <div class="footer-legal">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms &amp; Conditions</a>
+        </div>
+      </div>
+    </footer>
+
+    <a class="floating-wa" href="https://wa.me/27766115666" target="_blank" rel="noopener noreferrer" aria-label="Contact Northbound Digital on WhatsApp">WhatsApp</a>
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">↑</button>
+
+    <script src="script.js"></script>
   </body>
 </html>
